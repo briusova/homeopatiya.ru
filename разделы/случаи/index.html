@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <base href=".." />
+    <base href="../.." />
     <link rel="preload" crossorigin href="./index.json" as="fetch" />
     <link rel="preload" crossorigin href="./fonts.json" as="fetch" />
 
@@ -13,7 +13,10 @@
   "vue": "./assets/vue.esm-browser.prod-3.5.13.js",
   "element-plus": "./node_modules/element-plus/dist/index.full.min.mjs",
   "@iconify/vue": "./node_modules/@iconify/vue/dist/iconify.mjs",
-  "@element-plus/icons-vue": "./node_modules/@element-plus/icons-vue/dist/index.min.js"
+  "@element-plus/icons-vue": "./node_modules/@element-plus/icons-vue/dist/index.min.js",
+  "@vueuse/shared": "./node_modules/@vueuse/shared/index.mjs",
+  "@vueuse/core": "./node_modules/@vueuse/core/index.mjs",
+  "@vueuse/components": "./node_modules/@vueuse/components/index.mjs"
  }
 }
     </script>
@@ -42,10 +45,13 @@
     <link rel="modulepreload" crossorigin href="./node_modules/element-plus/dist/index.full.min.mjs">
     <link rel="modulepreload" crossorigin href="./node_modules/@iconify/vue/dist/iconify.mjs">
     <link rel="modulepreload" crossorigin href="./node_modules/@element-plus/icons-vue/dist/index.min.js">
-    <title>first</title>
+    <link rel="modulepreload" crossorigin href="./node_modules/@vueuse/shared/index.mjs">
+    <link rel="modulepreload" crossorigin href="./node_modules/@vueuse/core/index.mjs">
+    <link rel="modulepreload" crossorigin href="./node_modules/@vueuse/components/index.mjs">
+    <title>случаи</title>
     
     
-    <meta property="og:title" content="first">
+    <meta property="og:title" content="случаи">
   </head>
   <body>
     <div id="app" class="prose max-w-none" un-cloak></div>
