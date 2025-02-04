@@ -9,8 +9,7 @@
                 <div @mouseover="slide[i] = true" @mouseleave="slide[i] = false"
                     :class="`bg-[url(${child.images[0].url})]`"
                     class="flex flex-auto h-64 bg-center bg-cover overflow-hidden">
-                    <Transition @enter="extractAll" 
-                    enter-active-class="animate__animated animate__slideInUp"
+                    <Transition enter-active-class="animate__animated animate__slideInUp"
                         leave-active-class="animate__animated animate__slideOutDown">
                         <router-link v-if="slide[i]" class="bg-white/85 flex-auto flex justify-center items-center"
                             :to="child.to">
@@ -37,16 +36,16 @@
 </template>
 
 <script setup>
-import { inject, ref } from "vue";
+import { inject, ref, watch } from "vue";
 import { vIntersectionObserver } from "@vueuse/components";
 
 const { id } = defineProps(["id"]);
 const pages = inject("pages");
-const the = pages[id];
-const { title, description, $children } = the;
+const { title, description, $children } = pages[id];
 const flip = ref([]);
 const slide = ref([]);
+const once = true;
+const deep = true;
 
-const extractAll = () => { window.__unocss_runtime.extractAll() };
-
+watch(slide, () => { __unocss_runtime.extract("bg-white/85") }, { deep, once });
 </script>
