@@ -1,5 +1,5 @@
 <template>
-    <div class="container mx-auto">
+    <div class="ui container">
 
         <h3 class="text-right"><img class="float-left w-48 mr-2" src="images/logo.jpg" alt="logo"><em>
                 <icon icon="fa:quote-left" class="text-red-700 inline"></icon>Истинное, совершенное лечение
