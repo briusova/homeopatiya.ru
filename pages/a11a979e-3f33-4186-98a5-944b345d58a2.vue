@@ -196,6 +196,7 @@
 // Импорт необходимых функций
 import "./node_modules/animate.css/animate.min.css";
 import "./node_modules/element-plus/dist/index.css";
+import "./node_modules/fomantic-ui-css/components/container.css";
 
 import { computed, inject, ref, useTemplateRef, onMounted } from "vue";
 import ElementPlus from "element-plus";
