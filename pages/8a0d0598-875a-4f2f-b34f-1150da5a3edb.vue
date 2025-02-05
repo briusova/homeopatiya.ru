@@ -1,16 +1,16 @@
 <template>
-    <div class="container mx-auto">
+    <div class="ui container">
         <h1>{{ title }}</h1>
         <p>{{ description }}</p>
         <div class="grid grid-cols-4 gap-12 md:grid-cols-8 lg:grid-cols-12">
-            <el-card class="not-prose col-span-4 animate__animated" :class="{ animate__flipInY: flip[i] }"
+            <el-card class="not-prose col-span-4 animate__animated animate__faster" :class="{ animate___flipInY: flip[i] }"
                 body-class="!pa-0 flex" shadow="hover" v-for="(child, i) in $children"
                 v-intersection-observer="([{ isIntersecting }]) => { flip[i] = isIntersecting }">
                 <div @mouseover="slide[i] = true" @mouseleave="slide[i] = false"
                     :class="`bg-[url(${child.images[0].url})]`"
                     class="flex flex-auto h-64 bg-center bg-cover overflow-hidden">
-                    <Transition enter-active-class="animate__animated animate__slideInUp"
-                        leave-active-class="animate__animated animate__slideOutDown">
+                    <Transition enter-active-class="animate__animated animate__slideInUp animate__faster"
+                        leave-active-class="animate__animated animate__slideOutUp  animate__faster">
                         <router-link v-if="slide[i]" class="bg-white/85 flex-auto flex justify-center items-center"
                             :to="child.to">
                             <el-button size="large" circle tag="router-link" :to="child.to">
@@ -49,3 +49,20 @@ const deep = true;
 
 watch(slide, () => { __unocss_runtime.extract("bg-white/85") }, { deep, once });
 </script>
+
+<style>
+@keyframes flipInY {
+  from {
+    transform: perspective(2500px) rotateY(-100deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  to {
+    transform: perspective(2500px);
+  }
+}
+.animate___flipInY {
+  backface-visibility: visible !important;
+  animation-name: flipInY;
+}
+</style>
