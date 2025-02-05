@@ -6,6 +6,7 @@
     "@vueuse/core": "^12.5.0",
     "@vueuse/shared": "^12.5.0",
     "animate.css": "^4.1.1",
-    "element-plus": "^2.9.3"
+    "element-plus": "^2.9.3",
+    "fomantic-ui-css": "^2.9.3"
   }
 }
