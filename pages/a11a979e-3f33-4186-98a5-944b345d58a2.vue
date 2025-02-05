@@ -13,7 +13,7 @@
                 </template>
                 <template #title>
                     <router-link to="/" class="whitespace-nowrap flex items-center max-sm:hidden">
-                        <Icon icon="noto:sailboat" class="size-12" />
+                        homeopatiya.ru
                     </router-link>
                 </template>
                 <template #extra>
@@ -238,3 +238,9 @@ onMounted(() => {
 const drawer = ref(false);
 
 </script>
+
+<style>
+* {
+    font-family: Arsenal;
+}
+</style>
