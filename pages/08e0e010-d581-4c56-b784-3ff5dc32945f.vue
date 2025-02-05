@@ -1,15 +1,24 @@
 <template>
-    <div class="bg-[url(images/1682925271036.jpg)] min-h-[75dvh] bg-center flex">
+    <div :class="`bg-[url(${url})]`" class="min-h-[75dvh] bg-center bg-cover flex">
         <div class="flex flex-auto flex-col bg-black/45">
             <div class="container mx-auto flex-auto flex flex-col">
                 <div class="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12 my-12">
                     <div class="col-span-4 lg:col-span-6 text-white  text-center md:text-left">
-                        <h3>+7(926)375-0528</h3>
-                        <p>г. Москва, Новотушинский пр., 10 к. 1 (этаж 1)</p>
+                        <h3>+7 (926) 375-05-28</h3>
+
                     </div>
                     <div class="col-span-4 lg:col-span-6 text-white mt-8 md:text-right text-center">
                         <el-button type="danger" circle="" size="large">
+                            <icon icon="fa:envelope" class="size-3"></icon>
+                        </el-button>
+                        <el-button type="danger" circle="" size="large">
                             <icon icon="fa-brands:vk"></icon>
+                        </el-button>
+                        <el-button type="danger" circle="" size="large">
+                            <icon icon="fa-brands:whatsapp"></icon>
+                        </el-button>
+                        <el-button type="danger" circle="" size="large">
+                            <icon icon="fa-brands:telegram"></icon>
                         </el-button>
                         <el-button type="danger" circle="" size="large">
                             <icon icon="fa-brands:skype"></icon>
@@ -17,8 +26,9 @@
                     </div>
                 </div>
                 <div class="flex-auto flex flex-col justify-center">
-                    <h1 class="text-white mx-auto text-center">{{ name }}</h1>
-                    <h2 class="text-white mx-auto text-center">{{ title }}</h2>
+                    <h1 class="text-white mx-auto text-center">врач-гомеопат, холистический дерматолог,
+                        флоротерапевт<br>ТАРАСОВА ЕЛЕНА АЛЕКСАНДРОВНА</h1>
+                    <h2 class="text-white mx-auto text-center">ГОМЕОПАТИЯ — ВАШ ПУТЬ К ЗДОРОВЬЮ</h2>
                 </div>
                 <div class="not-prose grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12 my-12">
                     <div class="col-span-4 flex ">
@@ -42,12 +52,9 @@ import { inject } from "vue";
 
 const { id } = defineProps(["id"]);
 const pages = inject("pages");
-const the = pages[id];
-const { title, name } = the;
+const { title, name, images } = pages[id];
+const [{ url }] = images;
 
 </script>
 
-<style scoped>
-
-
-</style>
+<style scoped></style>
