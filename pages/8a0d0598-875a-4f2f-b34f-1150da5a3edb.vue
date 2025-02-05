@@ -21,9 +21,10 @@
             борьбу с болезнью. Моя цель — достичь гармонии человека с самим собой и окружающим миром. Я работаю, чтобы в
             мире стало больше красивых, здоровых и счастливых людей!</p>
         <div class="grid grid-cols-4 gap-12 md:grid-cols-8 lg:grid-cols-12">
-            <el-card class="not-prose col-span-4 animate__animated animate__faster" :class="{ animate___flipInY: flip[i] }"
-                body-class="!pa-0 flex" shadow="hover" v-for="(child, i) in $children"
-                v-intersection-observer="([{ isIntersecting }]) => { flip[i] = isIntersecting }">
+            <el-card class="not-prose col-span-4 animate__animated animate__faster"
+                :class="{ animate___flipInY: flip[i], animate___flipOutY: !flip[i], }" body-class="!pa-0 flex"
+                shadow="hover" v-for="(child, i) in $children"
+                v-intersection-observer="[([{ isIntersecting }]) => { flip[i] = isIntersecting }, { threshold: 0.3 }]">
                 <div @mouseover="slide[i] = true" @mouseleave="slide[i] = false"
                     :class="`bg-[url(${child.images[0].url})]`"
                     class="flex flex-auto h-64 bg-center bg-cover overflow-hidden">
@@ -72,17 +73,32 @@ watch(slide, () => { __unocss_runtime.extract("bg-white/85") }, { deep, once });
 
 <style>
 @keyframes flipInY {
-  from {
-    transform: perspective(2500px) rotateY(-100deg);
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
-  to {
-    transform: perspective(2500px);
-  }
+    from {
+        transform: perspective(2500px) rotateY(-100deg);
+    }
+
+    to {
+        transform: perspective(2500px);
+    }
 }
+
 .animate___flipInY {
-  backface-visibility: visible !important;
-  animation-name: flipInY;
+    backface-visibility: hidden;
+    animation-name: flipInY;
+}
+
+@keyframes flipOutY {
+    from {
+        transform: perspective(2500px);
+    }
+
+    to {
+        transform: perspective(2500px) rotateY(-100deg);
+    }
+}
+
+.animate___flipOutY {
+    backface-visibility: hidden;
+    animation-name: flipOutY;
 }
 </style>
