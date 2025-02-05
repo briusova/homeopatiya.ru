@@ -10,6 +10,7 @@
         "@vueuse/shared": "^12.5.0",
         "animate.css": "^4.1.1",
         "element-plus": "^2.9.3",
+        "fomantic-ui-css": "^2.9.3",
       },
     },
   },
@@ -87,6 +88,10 @@
     "escape-html": ["escape-html@1.0.3", "", {}, "sha512-NiSupZ4OeuGwr68lGIeym/ksIZMJodUGOSCZ/FSnTxcrekbvqrgdUxlJOMpijaKZVjAJrWrGs/6Jy8OMuyj9ow=="],
 
     "estree-walker": ["estree-walker@2.0.2", "", {}, "sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w=="],
+
+    "fomantic-ui-css": ["fomantic-ui-css@2.9.3", "", { "dependencies": { "jquery": "^3.4.0" } }, "sha512-7bM6p3QRpfZFofg7Fd3crzox2E/nBsPyyWDN+N4lnTjNMxgKltSaXJTfhLoK5xBA+wEoNtcmm6w6FQ5Drj+27A=="],
+
+    "jquery": ["jquery@3.7.1", "", {}, "sha512-m4avr8yL8kmFN8psrbFFFmB/If14iN5o9nw/NgnnM+kybDJpRsAynV2BsfpTYrTRysYUdADVD7CkUUizgkpLfg=="],
 
     "lodash": ["lodash@4.17.21", "", {}, "sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg=="],
 
