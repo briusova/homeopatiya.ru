@@ -1,5 +1,5 @@
 <template>
-    <div :class="`bg-[url(${url})]`" class="min-h-[75dvh] bg-center bg-cover flex">
+    <div :class="`bg-[url(${url})]`" class="min-h-[75dvh] sm:bg-center bg-cover bg-right  flex">
         <div class="flex flex-auto flex-col bg-black/45">
             <div class="container mx-auto flex-auto flex flex-col">
                 <div class="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12 my-12">
@@ -26,9 +26,13 @@
                     </div>
                 </div>
                 <div class="flex-auto flex flex-col justify-center">
-                    <h1 class="text-white mx-auto text-center">врач-гомеопат, холистический дерматолог,
+                    <h1
+                        class="text-white mx-auto text-center text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">
+                        врач-гомеопат, холистический дерматолог,
                         флоротерапевт<br>ТАРАСОВА ЕЛЕНА АЛЕКСАНДРОВНА</h1>
-                    <h2 class="text-white mx-auto text-center">ГОМЕОПАТИЯ — ВАШ ПУТЬ К ЗДОРОВЬЮ</h2>
+                    <h2
+                        class="text-white mx-auto text-center text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
+                        стаж — более 30 лет</h2>
                 </div>
                 <div class="not-prose grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12 my-12">
                     <div class="col-span-4 flex ">
