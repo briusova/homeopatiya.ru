@@ -238,9 +238,3 @@ onMounted(() => {
 const drawer = ref(false);
 
 </script>
-
-<style>
-* {
-    font-family: Arsenal;
-}
-</style>
