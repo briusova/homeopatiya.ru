@@ -32,7 +32,7 @@
                         флоротерапевт<br>ТАРАСОВА ЕЛЕНА АЛЕКСАНДРОВНА</h1>
                     <h2
                         class="text-white mx-auto text-center text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
-                        стаж — более 30 лет</h2>
+                        гомеопатия — ваш путь к здоровью</h2>
                 </div>
                 <div class="not-prose grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12 my-12">
                     <div class="col-span-4 flex ">
