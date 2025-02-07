@@ -1,10 +1,10 @@
 <template>
-    <div class="md:hidden grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12 my-12">
-        <div class="col-span-4 lg:col-span-6 text-slate-800 text-center md:text-left">
+    <div class="md:hidden my-6">
+        <div class="col-span-4 text-slate-800 text-center">
             <h3>+7 (926) 375-05-28</h3>
 
         </div>
-        <div class="col-span-4 lg:col-span-6 text-white mt-8 md:text-right text-center">
+        <div class="col-span-4 text-white text-center mt-6">
             <el-button type="danger" circle="" size="large">
                 <icon icon="fa:envelope" class="size-3"></icon>
             </el-button>
@@ -72,18 +72,7 @@
             </div>
         </div>
     </div>
-    <div class="md:hidden grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12 my-12">
-        <div class="col-span-4 flex ">
-            <el-button class="mx-auto" round="" size="large" plain="">Действие 1</el-button>
-        </div>
-        <div class="col-span-4 flex ">
-            <el-button class="mx-auto" round="" size="large">Действие 2</el-button>
-        </div>
-        <div class="col-span-full lg:col-span-4 flex">
-            <el-button class="mx-auto" round="" size="large">Действие 3</el-button>
-        </div>
-    </div>
-
+    
 </template>
 
 <script setup>
