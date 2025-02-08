@@ -1,13 +1,13 @@
 <template>
-    <div :class="`bg-[url(${url})]`" class="bg-center bg-cover flex">
+    <div :class="`bg-[url(${url})]`" class="min-h-[75dvh] bg-center bg-cover flex">
         <div class="flex flex-auto flex-col bg-black/45">
             <div class="container mx-auto flex-auto flex flex-col">
-                <div class="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12 my-12">
+                <div class="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12 my-0 md:my-12">
                     <div class="col-span-4 lg:col-span-6 text-white  text-center md:text-left">
                         <h3>+7 (926) 375-05-28</h3>
 
                     </div>
-                    <div class="col-span-4 lg:col-span-6 text-white mt-8 md:text-right text-center">
+                    <div class="col-span-4 lg:col-span-6 text-white mt-0 md:mt-8 md:text-right text-center">
                         <el-button type="danger" circle="" size="large">
                             <icon icon="fa:envelope" class="size-3"></icon>
                         </el-button>

@@ -1,11 +1,10 @@
 <template>
     <div class="ui container">
 
-        <h3 class="text-right"><img class="float-left w-48 mr-2" src="images/logo.jpg" alt="logo"><em>
+        <h3 class="text-right"><img class="float-left w-40 mr-6" src="images/9af44168-b14e-4ddb-8564-eb75c418721b.png" alt="logo"><em>
                 <icon icon="fa:quote-left" class="text-red-700 inline"></icon>Истинное, совершенное лечение
-                осуществляется согласно принципу: излечивать мягко, быстро, безусловно и окончательно.<icon
-                    icon="fa:quote-right" class="text-red-700 inline"></icon>
-            </em><br><strong><em>Самуэль Ганеман</em></strong></h3>
+                осуществляется согласно принципу: излечивать мягко, быстро, безусловно и окончательно.<icon icon="fa:quote-right" class="text-red-700 inline"></icon>
+            </em><br><strong><em>Самуэль&nbsp;Ганеман</em></strong></h3>
         <p>Вы зашли на сайт врача-гомеопата Тарасовой Елены Александровны. Я рада встрече с Вами!</p>
         <p>Уже более 30 лет я работаю в области гомеопатии и не перестаю восхищаться результатом действия этих
             маленьких крупинок. Удивительно, какой огромный потенциал скрыт в каждом человеке! Ведь гомеопатия не только
@@ -19,19 +18,12 @@
             реализовывать себя.</p>
         <p>Я готова вам помочь на этом пути. Лучше начать как можно раньше, пока есть силы, которые ещё не потрачены на
             борьбу с болезнью. Моя цель — достичь гармонии человека с самим собой и окружающим миром. Я работаю, чтобы в
-            мире стало больше красивых, здоровых и счастливых людей!</p>
+            мире стало больше красивых, здоровых и счастливых людей!</p><p><br></p>
         <div class="grid grid-cols-4 gap-12 md:grid-cols-8 lg:grid-cols-12">
-            <el-card class="not-prose col-span-4 animate__animated animate__faster"
-                :class="{ animate___flipInY: flip[i], animate___flipOutY: !flip[i], }" body-class="!pa-0 flex"
-                shadow="hover" v-for="(child, i) in $children"
-                v-intersection-observer="[([{ isIntersecting }]) => { flip[i] = isIntersecting }, { threshold: 0.3 }]">
-                <div @mouseover="slide[i] = true" @mouseleave="slide[i] = false"
-                    :class="`bg-[url(${child.images[0].url})]`"
-                    class="flex flex-auto h-64 bg-center bg-cover overflow-hidden">
-                    <Transition enter-active-class="animate__animated animate__slideInUp animate__faster"
-                        leave-active-class="animate__animated animate__slideOutUp  animate__faster">
-                        <router-link v-if="slide[i]" class="bg-white/85 flex-auto flex justify-center items-center"
-                            :to="child.to">
+            <el-card class="not-prose col-span-4 animate__animated animate__faster" :class="{ animate___flipInY: flip[i], animate___flipOutY: !flip[i], }" body-class="!pa-0 flex" shadow="hover" v-for="(child, i) in $children" v-intersection-observer="[([{ isIntersecting }]) => { flip[i] = isIntersecting }, { threshold: 0.3 }]">
+                <div @mouseover="slide[i] = true" @mouseleave="slide[i] = false" :class="`bg-[url(${child.images[0].url})]`" class="flex flex-auto h-64 bg-center bg-cover overflow-hidden">
+                    <transition enter-active-class="animate__animated animate__slideInUp animate__faster" leave-active-class="animate__animated animate__slideOutUp  animate__faster">
+                        <router-link v-if="slide[i]" class="bg-white/85 flex-auto flex justify-center items-center" :to="child.to">
                             <el-button size="large" circle="" tag="router-link" :to="child.to">
                                 <icon :icon="child.icon"></icon>
                             </el-button>
@@ -56,6 +48,10 @@
 
 
 
+
+
+
+
 <script setup>
 import { inject, ref, watch } from "vue";
 import { vIntersectionObserver } from "@vueuse/components";
@@ -70,6 +66,8 @@ const deep = true;
 
 watch(slide, () => { __unocss_runtime.extract("bg-white/85") }, { deep, once });
 </script>
+
+
 
 <style>
 @keyframes flipInY {
