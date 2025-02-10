@@ -1,6 +1,6 @@
 <template>
     <div :class="`bg-[url(${url})]`" class="min-h-[75dvh] bg-center bg-cover flex">
-        <div class="flex flex-auto flex-col bg-black/45">
+        <div class="flex flex-auto flex-col bg-black/45 pa-6">
             <div class="container mx-auto flex-auto flex flex-col">
                 <div class="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12 my-0 md:my-12">
                     <div class="col-span-4 lg:col-span-6 text-white  text-center md:text-left">

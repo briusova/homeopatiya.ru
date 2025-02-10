@@ -1,7 +1,7 @@
 <template>
     <div class="ui container">
 
-        <h3 class="text-right"><img class="float-left w-40 mr-6" src="images/a6980b22-54d0-444b-b608-3116f2b123e8.jpeg" alt="logo"><em>
+        <h3 class="text-right"><img class="float-left w-36 mr-6" src="images/22f8abe3-91e3-4edd-b23a-e0da4aaf38bc.png" alt="logo"><em>
                 <icon icon="fa:quote-left" class="text-red-700 inline"></icon>Истинное, совершенное лечение
                 осуществляется согласно принципу: излечивать мягко, быстро, безусловно и окончательно.<icon icon="fa:quote-right" class="text-red-700 inline"></icon>
             </em><br><strong><em>Самуэль&nbsp;Ганеман</em></strong></h3>
@@ -18,7 +18,7 @@
             реализовывать себя.</p>
         <p>Я готова вам помочь на этом пути. Лучше начать как можно раньше, пока есть силы, которые ещё не потрачены на
             борьбу с болезнью. Моя цель — достичь гармонии человека с самим собой и окружающим миром. Я работаю, чтобы в
-            мире стало больше красивых, здоровых и счастливых людей!</p><img src="images/a6980b22-54d0-444b-b608-3116f2b123e8.jpeg" alt="" decoding="async" loading="lazy"><p><br></p><p><br></p><p><br></p>
+            мире стало больше красивых, здоровых и счастливых людей!</p>
         <div class="grid grid-cols-4 gap-12 md:grid-cols-8 lg:grid-cols-12">
             <el-card class="not-prose col-span-4 animate__animated animate__faster" :class="{ animate___flipInY: flip[i], animate___flipOutY: !flip[i], }" body-class="!pa-0 flex" shadow="hover" v-for="(child, i) in $children" v-intersection-observer="[([{ isIntersecting }]) => { flip[i] = isIntersecting }, { threshold: 0.3 }]">
                 <div @mouseover="slide[i] = true" @mouseleave="slide[i] = false" :class="`bg-[url(${child.images[0].url})]`" class="flex flex-auto h-64 bg-center bg-cover overflow-hidden">
