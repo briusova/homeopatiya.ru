@@ -1,65 +1,109 @@
 <template>
-    <div :class="`bg-[url(${url})]`" class="min-h-[75dvh] bg-center bg-cover flex">
-        <div class="flex flex-auto flex-col bg-black/45 pa-6">
-            <div class="container mx-auto flex-auto flex flex-col">
-                <div class="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12 my-0 md:my-12">
-                    <div class="col-span-4 lg:col-span-6 text-white  text-center md:text-left">
-                        <h3>+7 (926) 375-05-28</h3>
-
-                    </div>
-                    <div class="col-span-4 lg:col-span-6 text-white mt-0 md:mt-8 md:text-right text-center">
-                        <el-button type="danger" circle="" size="large">
-                            <icon icon="fa:envelope" class="size-3"></icon>
-                        </el-button>
-                        <el-button type="danger" circle="" size="large">
-                            <icon icon="fa-brands:vk"></icon>
-                        </el-button>
-                        <el-button type="danger" circle="" size="large">
-                            <icon icon="fa-brands:whatsapp"></icon>
-                        </el-button>
-                        <el-button type="danger" circle="" size="large">
-                            <icon icon="fa-brands:telegram"></icon>
-                        </el-button>
-                        <el-button type="danger" circle="" size="large">
-                            <icon icon="fa-brands:skype"></icon>
-                        </el-button>
-                    </div>
-                </div>
-                <div class="flex-auto flex flex-col justify-center">
-                    <h1
-                        class="text-white mx-auto text-center text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">
-                        врач-гомеопат, холистический дерматолог,
-                        флоротерапевт<br>ТАРАСОВА ЕЛЕНА АЛЕКСАНДРОВНА</h1>
-                    <h2
-                        class="text-white mx-auto text-center text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
-                        гомеопатия — ваш путь к здоровью</h2>
-                </div>
-                <div class="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12 my-12">
-                    <div class="col-span-4 flex ">
-                        <el-button class="mx-auto" round="" size="large" plain="">Действие 1</el-button>
-                    </div>
-                    <div class="col-span-4 flex ">
-                        <el-button class="mx-auto" round="" size="large">Действие 2</el-button>
-                    </div>
-                    <div class="col-span-full lg:col-span-4 flex">
-                        <el-button class="mx-auto" round="" size="large">Действие 3</el-button>
-                    </div>
-                </div>
-
-            </div>
+    <div class="flex flex-col items-start gap-4 lg:flex-row" un-cloak>
+        <div class="flex items-center mb-6">
+            <img class="w-36 mr-6" src="images/22f8abe3-91e3-4edd-b23a-e0da4aaf38bc.png" :alt="title">
+        </div>
+        <div class="flex flex-col items-start lg:items-end justify-center w-full min-w-0 gap-0 text-base">
+            <h3 class="mb-4 text-2xl leading-6 text-slate-700 italic bold lg:text-right">
+                <icon icon="fa:quote-left" class="text-red-700 inline"></icon>
+                {{ description }}
+                <icon icon="fa:quote-right" class="text-red-700 inline"></icon>
+            </h3>
+            <h3 class="mb-4 text-2xl leading-6 text-slate-700 italic bold lg:text-right">
+                Самуэль Ганеман
+            </h3>
         </div>
     </div>
-    
+    <div class="prose max-w-none text-slate-500" un-cloak>
+        <p>Вы зашли на сайт врача-гомеопата Тарасовой Елены Александровны. Я рада встрече с Вами!</p>
+        <p>Уже более 30 лет я работаю в области гомеопатии и не перестаю восхищаться результатом действия этих
+            маленьких крупинок. Удивительно, какой огромный потенциал скрыт в каждом человеке! Ведь гомеопатия не только
+            избавляет от болезней, но и помогает раскрыть внутренние способности, которые есть у человека с рождения, но
+            скрыты под бременем заболевания.</p>
+        <p>Я наблюдаю, как на фоне гомеопатического лечения у людей появляются силы, как они начинают творить:
+            рисовать, петь, писать стихи, открывают свой бизнес, находят своё предназначение в жизни, иногда даже в
+            неожиданной для себя сфере.</p>
+        <p>Гомеопатия дарит самое ценное — освобождение от бремени мучительных болезней, страха и тревог, чувства вины,
+            неуверенности в себе. Она избавляет от всего, что сковывает человека и мешает ему быть свободным,
+            реализовывать себя.</p>
+        <p>Я готова вам помочь на этом пути. Лучше начать как можно раньше, пока есть силы, которые ещё не потрачены на
+            борьбу с болезнью. Моя цель — достичь гармонии человека с самим собой и окружающим миром. Я работаю, чтобы в
+            мире стало больше красивых, здоровых и счастливых людей!</p>
+    </div>
+    <div class="grid grid-cols-4 gap-12 mt-24 md:grid-cols-8 lg:grid-cols-12" un-cloak>
+        <el-card class="not-prose col-span-4 animate__animated animate__faster"
+            :class="{ animate___flipInY: flip[i], animate___flipOutY: !flip[i], }" body-class="!pa-0 flex"
+            shadow="hover" v-for="(child, i) in $children"
+            v-intersection-observer="[([{ isIntersecting }]) => { flip[i] = isIntersecting }, { threshold: 0.3 }]">
+            <div @mouseover="slide[i] = true" @mouseleave="slide[i] = false" :class="`bg-[url(${child.images[0].url})]`"
+                class="flex flex-auto h-64 bg-center bg-cover overflow-hidden">
+                <transition enter-active-class="animate__animated animate__slideInUp animate__faster"
+                    leave-active-class="animate__animated animate__slideOutUp  animate__faster">
+                    <router-link v-if="slide[i]" class="bg-white/85 flex-auto flex justify-center items-center"
+                        :to="child.to">
+                        <el-button size="large" circle="" tag="router-link" :to="child.to">
+                            <icon :icon="child.icon"></icon>
+                        </el-button>
+                    </router-link>
+                </transition>
+            </div>
+            <template #footer="">
+                <div class="flex flex-col items-start gap-4 lg:flex-row">
+                    <div class="flex items-center text-emerald-500">
+                        <icon :icon="child.icon" class="size-5"></icon>
+                    </div>
+                    <div class="flex flex-col items-start justify-center w-full min-w-0 gap-0 text-base">
+                        <h3 class="mb-4 text-lg leading-6 text-slate-700">{{ child.title }}</h3>
+                        <p class="text-slate-500">{{ child.description }}</p>
+                    </div>
+                </div>
+            </template>
+        </el-card>
+    </div>
 </template>
 
 <script setup>
-import { inject } from "vue";
+import { inject, ref, watch } from "vue";
+import { vIntersectionObserver } from "@vueuse/components";
 
-const { id } = defineProps(["id"]);
-const pages = inject("pages");
-const { title, name, images } = pages[id];
-const [{ url }] = images;
+const { id } = defineProps(["id"]),
+    { title, description, $children } = inject("pages")[id],
+    flip = ref([]),
+    slide = ref([]),
+    once = true,
+    deep = true;
 
+watch(slide, () => { __unocss_runtime.extract("bg-white/85") }, { deep, once });
 </script>
 
-<style scoped></style>
+<style scoped>
+@keyframes flipInY {
+    from {
+        transform: perspective(2500px) rotateY(-100deg);
+    }
+
+    to {
+        transform: perspective(2500px);
+    }
+}
+
+.animate___flipInY {
+    backface-visibility: hidden;
+    animation-name: flipInY;
+}
+
+@keyframes flipOutY {
+    from {
+        transform: perspective(2500px);
+    }
+
+    to {
+        transform: perspective(2500px) rotateY(-100deg);
+    }
+}
+
+.animate___flipOutY {
+    backface-visibility: hidden;
+    animation-name: flipOutY;
+}
+</style>
