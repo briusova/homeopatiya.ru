@@ -52,8 +52,8 @@
       "_hookable-B7_1qfUG.js"
     ]
   },
-  "_unocss-D9U1X8-o.js": {
-    "file": "assets/unocss-D9U1X8-o.js",
+  "_unocss-C5n7vyPn.js": {
+    "file": "assets/unocss-C5n7vyPn.js",
     "name": "unocss",
     "imports": [
       "node_modules/ofetch/dist/index.mjs",
@@ -101,12 +101,12 @@
     "name": "vueuse"
   },
   "index.html": {
-    "file": "assets/index-BYsQ3Cib.js",
+    "file": "assets/index-B76kmJwS.js",
     "name": "index",
     "src": "index.html",
     "isEntry": true,
     "imports": [
-      "_unocss-D9U1X8-o.js",
+      "_unocss-C5n7vyPn.js",
       "_vues3-BNWfnI47.js",
       "_iconify-V2NmTHlX.js",
       "_unhead-CdZEm2eo.js",
@@ -145,7 +145,7 @@
     ]
   },
   "src/views/MultiView.vue": {
-    "file": "assets/MultiView-Dmcskghf.js",
+    "file": "assets/MultiView-rmOLvQsk.js",
     "name": "MultiView",
     "src": "src/views/MultiView.vue",
     "isDynamicEntry": true,
@@ -156,7 +156,7 @@
       "index.html",
       "_uuid-C_lTrkZC.js",
       "_vue-BQnMDgJF.js",
-      "_unocss-D9U1X8-o.js",
+      "_unocss-C5n7vyPn.js",
       "node_modules/ofetch/dist/index.mjs",
       "_destr-Cx7WjB9q.js",
       "_ufo-LxZlbPj-.js",
@@ -172,7 +172,7 @@
     ]
   },
   "src/views/NotFoundView.vue": {
-    "file": "assets/NotFoundView-DcFkJqc9.js",
+    "file": "assets/NotFoundView-DjS4KQQc.js",
     "name": "NotFoundView",
     "src": "src/views/NotFoundView.vue",
     "isDynamicEntry": true,
@@ -181,7 +181,7 @@
       "index.html",
       "_packrup-BqxTmGwz.js",
       "_hookable-B7_1qfUG.js",
-      "_unocss-D9U1X8-o.js",
+      "_unocss-C5n7vyPn.js",
       "node_modules/ofetch/dist/index.mjs",
       "_destr-Cx7WjB9q.js",
       "_ufo-LxZlbPj-.js",
@@ -199,7 +199,7 @@
     ]
   },
   "src/views/SingleView.vue": {
-    "file": "assets/SingleView-3lZrRChz.js",
+    "file": "assets/SingleView-ChXyyECp.js",
     "name": "SingleView",
     "src": "src/views/SingleView.vue",
     "isDynamicEntry": true,
@@ -207,7 +207,7 @@
       "_vues3-BNWfnI47.js",
       "index.html",
       "_uuid-C_lTrkZC.js",
-      "_unocss-D9U1X8-o.js",
+      "_unocss-C5n7vyPn.js",
       "node_modules/ofetch/dist/index.mjs",
       "_destr-Cx7WjB9q.js",
       "_ufo-LxZlbPj-.js",
