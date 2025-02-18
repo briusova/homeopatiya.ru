@@ -50,7 +50,7 @@
             <template #footer="">
                 <div class="flex flex-col items-start gap-4 lg:flex-row">
                     <div class="flex items-center text-emerald-500">
-                        <icon :icon="child.icon" class="size-5"></icon>
+                        <icon :icon="child.icon" class="size-7"></icon>
                     </div>
                     <div class="flex flex-col items-start justify-center w-full min-w-0 gap-0 text-base">
                         <h3 class="mb-4 text-lg leading-6 text-slate-700">{{ child.title }}</h3>
