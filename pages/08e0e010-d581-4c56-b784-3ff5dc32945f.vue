@@ -10,7 +10,7 @@
                 <icon icon="fa:quote-right" class="text-red-700 inline"></icon>
             </h3>
             <h3 class="mb-4 text-2xl leading-6 text-slate-700 italic bold lg:text-right">
-                Самуэль Ганеман
+                доктор Самуэль Ганеман, основатель гомеопатии
             </h3>
         </div>
     </div>
