@@ -92,8 +92,8 @@
     "file": "assets/vue3-sfc-loader-DdTOzAd6.js",
     "name": "vue3-sfc-loader"
   },
-  "_vues3-BNWfnI47.js": {
-    "file": "assets/vues3-BNWfnI47.js",
+  "_vues3-GLqz-c8Z.js": {
+    "file": "assets/vues3-GLqz-c8Z.js",
     "name": "vues3"
   },
   "_vueuse-ZNIp1zn7.js": {
@@ -101,13 +101,13 @@
     "name": "vueuse"
   },
   "index.html": {
-    "file": "assets/index-B76kmJwS.js",
+    "file": "assets/index-BwQkQUj_.js",
     "name": "index",
     "src": "index.html",
     "isEntry": true,
     "imports": [
       "_unocss-C5n7vyPn.js",
-      "_vues3-BNWfnI47.js",
+      "_vues3-GLqz-c8Z.js",
       "_iconify-V2NmTHlX.js",
       "_unhead-CdZEm2eo.js",
       "_vue-router-OTT23yck.js",
@@ -145,12 +145,12 @@
     ]
   },
   "src/views/MultiView.vue": {
-    "file": "assets/MultiView-rmOLvQsk.js",
+    "file": "assets/MultiView-CaOyWIKh.js",
     "name": "MultiView",
     "src": "src/views/MultiView.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_vues3-BNWfnI47.js",
+      "_vues3-GLqz-c8Z.js",
       "_vueuse-ZNIp1zn7.js",
       "_vue-router-OTT23yck.js",
       "index.html",
@@ -172,7 +172,7 @@
     ]
   },
   "src/views/NotFoundView.vue": {
-    "file": "assets/NotFoundView-DjS4KQQc.js",
+    "file": "assets/NotFoundView-BzjgU1mB.js",
     "name": "NotFoundView",
     "src": "src/views/NotFoundView.vue",
     "isDynamicEntry": true,
@@ -190,7 +190,7 @@
       "_ms-CzQ2E3wO.js",
       "_magic-string-D9CdRQHO.js",
       "_jridgewell-9KHfGwW6.js",
-      "_vues3-BNWfnI47.js",
+      "_vues3-GLqz-c8Z.js",
       "_vue-router-OTT23yck.js",
       "_vue-BQnMDgJF.js",
       "_vueuse-ZNIp1zn7.js",
@@ -199,12 +199,12 @@
     ]
   },
   "src/views/SingleView.vue": {
-    "file": "assets/SingleView-ChXyyECp.js",
+    "file": "assets/SingleView-CeOkI8JB.js",
     "name": "SingleView",
     "src": "src/views/SingleView.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_vues3-BNWfnI47.js",
+      "_vues3-GLqz-c8Z.js",
       "index.html",
       "_uuid-C_lTrkZC.js",
       "_unocss-C5n7vyPn.js",

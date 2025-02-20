@@ -1,11 +1,17 @@
 <template>
     <div class="prose max-w-none text-slate-500 mb-24">
-        <p>Многим из вас знакома гомеопатия. А некоторые уже лечатся у меня или у других гомеопатов.</p><p>Тем же, кто только
+        <p>Многим из вас знакома гомеопатия. А некоторые уже лечатся у меня или у других гомеопатов.</p>
+        <p>Тем же, кто только
             открывает для себя этот удивительный метод, я хочу рассказать о нём подробнее.</p>
     </div>
-    <div class="my-4 flex flex-col items-start gap-4 lg:flex-row animate__animated animate__faster" v-for="({ images, to, title, description, icon }, i) in $children" :class="{ animate__fadeInRight: fade[i], animate__fadeOutRight: !fade[i], }" v-intersection-observer="([{ isIntersecting }]) => { fade[i] = isIntersecting }">
-        <div @mouseover="slide[i] = true" @mouseleave="slide[i] = false" :class="`bg-[url(${images[0].url})]`" class="flex flex-auto w-48 h-24 bg-center bg-cover overflow-hidden rounded">
-            <transition enter-active-class="animate__animated animate__slideInUp animate__faster" leave-active-class="animate__animated animate__slideOutUp  animate__faster">
+    <div class="my-4 flex flex-col items-start gap-4 lg:flex-row animate__animated animate__faster"
+        v-for="({ images, to, title, description, icon }, i) in $children"
+        :class="{ animate__fadeInRight: fade[i], animate__fadeOutRight: !fade[i], }"
+        v-intersection-observer="([{ isIntersecting }]) => { fade[i] = isIntersecting }">
+        <div @mouseover="slide[i] = true" @mouseleave="slide[i] = false" :class="`bg-[url(${images[0].url})]`"
+            class="flex flex-auto w-48 h-24 bg-center bg-cover overflow-hidden rounded">
+            <transition enter-active-class="animate__animated animate__slideInUp animate__faster"
+                leave-active-class="animate__animated animate__slideOutUp  animate__faster">
                 <router-link v-if="slide[i]" class="bg-white/85 flex-auto flex justify-center items-center" :to="to">
                     <el-button size="large" circle="" tag="router-link" :to="to">
                         <icon :icon="icon"></icon>
@@ -13,8 +19,10 @@
                 </router-link>
             </transition>
         </div>
-        <router-link :to="to" class="flex w-full min-w-0 gap-4 text-base" @mouseover="mouseenter[i] = true" @mouseout="mouseenter[i] = false">
-            <icon :icon="icon" class="size-10 animate__animated animate__slow" :class="{ animate__shakeY: mouseenter[i], 'text-sky-800': mouseenter[i] }"></icon>
+        <router-link :to="to" class="flex w-full min-w-0 gap-4 text-base" @mouseover="mouseenter[i] = true"
+            @mouseout="mouseenter[i] = false">
+            <icon :icon="icon" class="size-10 animate__animated animate__slow text-emerald-500"
+                :class="{ animate__shakeY: mouseenter[i], 'text-sky-800': mouseenter[i] }"></icon>
             <div class="flex flex-col items-start justify-center w-full min-w-0 gap-0 text-base">
                 <h3 class="mb-4 text-lg leading-6 text-slate-700" :class="{ '!text-sky-800': mouseenter[i] }">
                     {{ title }}
