@@ -48,7 +48,7 @@
                 </transition>
             </div>
             <template #footer="">
-                <div class="flex flex-col items-start gap-4 lg:flex-row">
+                <router-link class="flex flex-col items-start gap-4 lg:flex-row" :to="child.to">
                     <div class="flex items-center text-emerald-500">
                         <icon :icon="child.icon" class="size-7"></icon>
                     </div>
@@ -56,7 +56,7 @@
                         <h3 class="mb-4 text-lg leading-6 text-slate-700">{{ child.title }}</h3>
                         <p class="text-slate-500">{{ child.description }}</p>
                     </div>
-                </div>
+                </router-link>
             </template>
         </el-card>
     </div>
