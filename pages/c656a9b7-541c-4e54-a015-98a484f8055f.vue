@@ -1,10 +1,10 @@
 <template>
     <div class="ui container">
 
-        <h1 class="mt-12" style="text-align: justify;">С какими заболеваниями я работаю</h1>
+        <h1 class="mt-12" style="text-align: left;">С какими заболеваниями я работаю</h1>
         <p style="text-align: justify;">Гомеопаты консультируют взрослых и детей, лечат любые заболевания в пределах
             своей компетенции.&nbsp;</p>
-        <p style="text-align: justify;">&nbsp;Если говорить о медицинском образовании, то я — ДЕРМАТОЛОГ,
+        <p style="text-align: justify;">Если говорить о медицинском образовании, то я — ДЕРМАТОЛОГ,
             ТЕРАПЕВТ.&nbsp;</p>
         <p style="text-align: justify;">Базовое медицинское образование у меня
             — ТЕРАПЕВТИЧЕСКОЕ.</p>

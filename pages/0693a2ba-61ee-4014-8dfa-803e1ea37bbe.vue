@@ -1,7 +1,7 @@
 <template>
     <div class="ui container">
 
-        <h1 class="mt-12" style="text-align: justify;">Гомеопатия — узнайте больше!</h1>
+        <h1 class="mt-12" style="text-align: left;">Гомеопатия — узнайте больше!</h1>
         <p style="text-align: justify;"><b><i>Интервью для журнала "Няня" 2006 год</i></b>.</p>
         <p style="text-align: justify;" class="border-l-2 pl-2 border-slate-400"><i><b>Гомеопаты – особые врачи у них свой подход к лечению болезней, к их осмыслению и
             способам им противостоять. Но сама гомеопатия для многих до сих пор наука спорная и не до конца понятная,

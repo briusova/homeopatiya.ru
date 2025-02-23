@@ -1,7 +1,7 @@
 <template>
     <div class="ui container">
 
-        <h1 class="mt-12" style="text-align: justify;">Кожные болезни с точки зрения гомеопата</h1>
+        <h1 class="mt-12" style="text-align: left;">Кожные болезни с точки зрения гомеопата</h1>
         <p style="text-align: justify;"><b><i>Статья была опубликована в журнале "Les nouvelles esthetiques". Рубрика:
                     Наука и красота</i></b>.</p>
 
