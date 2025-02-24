@@ -12,5 +12,5 @@
 </template>
 
 <script setup>
-const srcList = [...Array(62).keys()].map((i) => `images/diplomas/${i + 1}.jpg`);
+const srcList = [...Array(63).keys()].map((i) => `images/diplomas/${i + 1}.jpg`);
 </script>
