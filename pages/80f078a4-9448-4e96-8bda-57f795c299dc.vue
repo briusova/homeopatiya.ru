@@ -1,7 +1,7 @@
 <template>
     <div class="ui container">
 
-        <h1 class="mt-12" style="text-align: justify;">Гомеопатический взгляд на проблему акне (вульгарные угри)</h1>
+        <h1 class="mt-12" style="text-align: left;">Гомеопатический взгляд на проблему акне (вульгарные угри)</h1>
         <p style="text-align: justify;"><i>Статья была опубликована в журнале "Kosmetik international" в феврале 2004
                 года</i>.</p>
         <p style="text-align: justify;">Классическая гомеопатия занимается индивидуальным подбором препаратов. Каждому
