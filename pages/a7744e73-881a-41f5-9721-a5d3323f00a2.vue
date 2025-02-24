@@ -1,14 +1,9 @@
 <template>
-    <div class="mb-28 bg-no-repeat bg-center bg-cover" :class="`bg-[url(${url})]`">{{  }}</div>
+    <el-watermark v-for="(url, i) in srcList">
+    <el-image :src="url" class="size-10" fit="contain"
+        :preview-src-list="srcList" :initial-index="i"></el-image></el-watermark>
 </template>
 
 <script setup>
-import { inject } from "vue";
-
-const { id } = defineProps(["id"]);
-const pages = inject("pages");
-const the = pages[id];
-const {title, images, description} = the;
-const [{url, alt}] = images;
-
+const srcList = [...Array(62).keys()].map((i) => `images/diplomas/${i + 1}.jpg`);
 </script>
