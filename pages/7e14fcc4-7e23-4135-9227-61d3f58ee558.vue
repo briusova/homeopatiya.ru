@@ -19,7 +19,7 @@
         <p style="text-align: justify; ">Никто не может сказать наверняка, помог ли гомеопатический препарат этому
             человеку, или же то, что он "почувствовал себя хорошо" является совпадением. Но это именно то, что
             происходит, когда вы выздоравливаете естественным путём, вам просто "становится хорошо".</p>
-        <p style="text—align: justify;"></p><div style="text-align: justify;"><span style="color: var(--un-prose-body);">&nbsp;</span><b style="color: var(--un-prose-body);">Как долго займёт моё выздоровление?</b></div><span style="color: var(--un-prose-body);"><div style="text-align: justify;"><span style="color: var(--un-prose-body);">Когда как. Если вы болели очень долго, у вас были серьёзные проблемы со
+        <p style="text—align: justify;"></p><div style="text-align: justify;"><b style="color: var(--un-prose-body);">Как долго займёт моё выздоровление?</b></div><span style="color: var(--un-prose-body);"><div style="text-align: justify;"><span style="color: var(--un-prose-body);">Когда как. Если вы болели очень долго, у вас были серьёзные проблемы со
             здоровьем, выздоровление может занять несколько лет. Некоторые люди, однако, реагируют на препарат с
             замечательной быстротой, несмотря на тот факт, что болели очень долгое время.</span></div></span><p></p>
         <p style="text—align: justify;"></p><div style="text-align: justify;"><b style="color: var(--un-prose-body);">Как я узнаю, что мне становится лучше?</b></div><span style="color: var(--un-prose-body);"><div style="text-align: justify;"><span style="color: var(--un-prose-body);">Вы почувствуете себя лучше, и ваши проблемы будут решаться. Гомеопаты обычно
