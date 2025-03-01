@@ -19,10 +19,14 @@
                     </RouterLink>
                 </li>
             </ul>
-
+            <p></p>
+            <el-button class="not-prose" tag="router-link" :to="the.parent.to" :icon="Back" type="success">на
+                главную</el-button>
 
         </div>
+
     </section>
+
 </template>
 
 <script setup>
