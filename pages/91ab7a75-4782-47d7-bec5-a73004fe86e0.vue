@@ -12,7 +12,7 @@
                         <div class="flex items-center shrink-0">
                             <img :src="images[0]?.url" :alt="images[0]?.alt" class="w-40 rounded">
                         </div>
-                        <icon class="size-6" :icon="icon"></icon>
+                        <icon class="size-6" :icon="icon" text-emerald-500></icon>
                         <div class="flex flex-col gap-0 min-h-[2rem] items-start justify-center w-full min-w-0">
                             <h4 class="text-base text-slate-700 ">{{ header }}</h4>
                             <p class="w-full text-sm text-slate-500">{{ description }}</p>
