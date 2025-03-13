@@ -4,12 +4,12 @@
         <p>Тем же, кто только
             открывает для себя этот удивительный метод, я хочу рассказать о нём подробнее.</p>
     </div>
-    <div class="my-4 flex flex-col items-start gap-4 lg:flex-row animate__animated animate__faster"
+    <div class="my-4 flex flex-col items-start gap-4 sm:flex-row animate__animated animate__faster"
         v-for="({ images, to, title, description, icon }, i) in $children"
         :class="{ animate__fadeInRight: fade[i], animate__fadeOutRight: !fade[i], }"
         v-intersection-observer="([{ isIntersecting }]) => { fade[i] = isIntersecting }">
         <div @mouseover="slide[i] = true" @mouseleave="slide[i] = false" :class="`bg-[url(${images[0].url})]`"
-            class="flex flex-auto w-48 h-24 bg-center bg-cover overflow-hidden rounded">
+            class="flex flex-auto w-full h-48 sm:w-48 sm:h-24 bg-center bg-cover overflow-hidden rounded">
             <transition enter-active-class="animate__animated animate__slideInUp animate__faster"
                 leave-active-class="animate__animated animate__slideOutUp  animate__faster">
                 <router-link v-if="slide[i]" class="bg-white/85 flex-auto flex justify-center items-center" :to="to">
