@@ -199,6 +199,7 @@ import "./node_modules/element-plus/dist/index.css";
 import "./node_modules/fomantic-ui-css/components/container.css";
 
 import { computed, inject, ref, useTemplateRef, onMounted } from "vue";
+import { useRoute  } from "vue-router";
 import ElementPlus from "element-plus";
 import { Icon } from '@iconify/vue';
 import { get, set } from "@vueuse/core";
@@ -214,8 +215,8 @@ window.app.use(ElementPlus);
 const pages = inject("pages");
 //const the = pages[id];
 //const views = computed(() => the.$children.filter(({ $children }) => $children.length));
-const currentId = inject("id");
-const current = computed(() => pages[get(currentId)]);
+const route = useRoute();
+const current = computed(() => pages[route.name]);
 
 // Анимация заголовка сайта при прокрутки страницы
 
