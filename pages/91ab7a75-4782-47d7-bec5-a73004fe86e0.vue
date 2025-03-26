@@ -1,38 +1,49 @@
 <template>
-    <section class="py-14" un-cloak>
-        <div class="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
-            <div class="max-w-xl space-y-3 not-prose mb-6">
-                <p class="text-gray-800 text-3xl font-semibold sm:text-4xl">Библиотека</p>
-                <p>Больше статей на сайте.</p>
-            </div>
-
-            <ul class="divide-y divide-slate-100 not-prose">
-                <li v-for="{ header, to, description, images, icon } in the.$children">
-                    <RouterLink :to="to" class="flex items-start gap-4 px-4 py-3">
-                        <div class="flex items-center shrink-0">
-                            <img :src="images[0]?.url" :alt="images[0]?.alt" class="w-40 rounded">
-                        </div>
-                        <icon class="size-6" :icon="icon" text-emerald-500></icon>
-                        <div class="flex flex-col gap-0 min-h-[2rem] items-start justify-center w-full min-w-0">
-                            <h4 class="text-base text-slate-700 ">{{ header }}</h4>
-                            <p class="w-full text-sm text-slate-500">{{ description }}</p>
-                        </div>
-                    </RouterLink>
-                </li>
-            </ul>
-            <p></p>
-            <el-button class="not-prose" tag="router-link" :to="the.parent.to" :icon="Back" type="success">на
-                главную</el-button>
-
+    <div class="prose max-w-none text-slate-500 mb-24">
+        <p>555</p>
+    </div>
+    <div class="my-4 flex flex-col items-start gap-4 sm:flex-row animate__animated animate__faster"
+        v-for="({ images, to, title, description, icon }, i) in $children"
+        :class="{ animate__fadeInRight: fade[i], animate__fadeOutRight: !fade[i], }"
+        v-intersection-observer="([{ isIntersecting }]) => { fade[i] = isIntersecting }">
+        <div @mouseover="slide[i] = true" @mouseleave="slide[i] = false" :class="`bg-[url(${images[0].url})]`"
+            class="flex flex-auto w-full h-48 sm:w-48 sm:h-24 bg-center bg-cover overflow-hidden rounded">
+            <transition enter-active-class="animate__animated animate__slideInUp animate__faster"
+                leave-active-class="animate__animated animate__slideOutUp  animate__faster">
+                <router-link v-if="slide[i]" class="bg-white/85 flex-auto flex justify-center items-center" :to="to">
+                    <el-button size="large" circle="" tag="router-link" :to="to">
+                        <icon :icon="icon"></icon>
+                    </el-button>
+                </router-link>
+            </transition>
         </div>
-
-    </section>
-
+        <router-link :to="to" class="flex w-full min-w-0 gap-4 text-base" @mouseover="mouseenter[i] = true"
+            @mouseout="mouseenter[i] = false">
+            <icon :icon="icon" class="size-10 animate__animated animate__slow text-emerald-500"
+                :class="{ animate__shakeY: mouseenter[i], 'text-sky-800': mouseenter[i] }"></icon>
+            <div class="flex flex-col items-start justify-center w-full min-w-0 gap-0 text-base">
+                <h3 class="mb-4 text-lg leading-6 text-slate-700" :class="{ '!text-sky-800': mouseenter[i] }">
+                    {{ title }}
+                </h3>
+                <p class="text-slate-500">{{ description }}</p>
+            </div>
+        </router-link>
+    </div>
 </template>
 
+
+
 <script setup>
-import { inject } from "vue";
-const { id } = defineProps(["id"]);
-const pages = inject("pages");
-const the = pages[id];
+import { inject, ref, watch } from "vue";
+import { vIntersectionObserver } from "@vueuse/components";
+
+const { id } = defineProps(["id"]),
+    { $children } = inject("pages")[id],
+    fade = ref([]),
+    slide = ref([]),
+    mouseenter = ref([]),
+    once = true,
+    deep = true;
+
+watch(slide, () => { __unocss_runtime.extract("bg-white/85") }, { deep, once });
 </script>
