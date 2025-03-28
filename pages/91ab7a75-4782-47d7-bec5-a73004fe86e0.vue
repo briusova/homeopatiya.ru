@@ -1,6 +1,8 @@
 <template>
-    <div class="prose max-w-none text-slate-500 mb-24">
-        <p>555</p>
+    <div class="prose max-w-none text-slate-500 mb-10">
+        <h1 class="mt-12" style="text-align: left;">Интересное о гомеопатии</h1>
+        <p style="text-align: justify;">От мифов до доказательной базы. Статьи о последних тенденциях в гомеопатии,
+            интервью с ведущими специалистами, ссылки на научные исследования.</p>
     </div>
     <div class="my-4 flex flex-col items-start gap-4 sm:flex-row animate__animated animate__faster"
         v-for="({ images, to, title, description, icon }, i) in $children"
@@ -28,17 +30,25 @@
                 <p class="text-slate-500">{{ description }}</p>
             </div>
         </router-link>
+
+
+
     </div>
+
+    <el-button class="not-prose" tag="router-link" :to="parent.to" :icon="Back" type="success">на
+        главную</el-button>
 </template>
 
 
 
 <script setup>
 import { inject, ref, watch } from "vue";
+import { Back } from '@element-plus/icons-vue';
+
 import { vIntersectionObserver } from "@vueuse/components";
 
 const { id } = defineProps(["id"]),
-    { $children } = inject("pages")[id],
+    { $children, parent } = inject("pages")[id],
     fade = ref([]),
     slide = ref([]),
     mouseenter = ref([]),
