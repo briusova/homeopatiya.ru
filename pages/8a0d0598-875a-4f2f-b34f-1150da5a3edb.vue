@@ -46,9 +46,6 @@
         </router-link>
     </div>
 </template>
-
-
-
 <script setup>
 import { inject, ref, watch } from "vue";
 import { vIntersectionObserver } from "@vueuse/components";
