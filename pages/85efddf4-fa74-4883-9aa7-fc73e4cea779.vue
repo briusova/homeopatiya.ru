@@ -19,10 +19,10 @@
                             target="_blank">
                             <icon icon="fa-brands:whatsapp"></icon>
                         </el-button>
-                        <el-button type="danger" circle="" size="large" tag="a" href="https://t.me/doctor_etarasova" target="_blank">
+                        <el-button type="danger" circle="" size="large" tag="a" href="https://t.me/doctor_etarasova"
+                            target="_blank">
                             <icon icon="fa-brands:telegram"></icon>
                         </el-button>
-
                     </div>
                 </div>
                 <div class="flex-auto flex flex-col justify-center">
@@ -38,16 +38,17 @@
                 </div>
                 <div class="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12 my-12 not-prose">
                     <div class="col-span-4 flex ">
-                        <el-button class="mx-auto" round="" size="large" plain="" tag="router-link"
-                            to="/обо_мне/учёба_и_работа/">обо мне</el-button>
+                        <router-link class="!mx-auto ui  yellow inverted basic button !rounded-3xl"
+                            to="/обо_мне/учёба_и_работа/">обо мне</router-link>
+                            
                     </div>
                     <div class="col-span-4 flex ">
-                        <el-button class="mx-auto" round="" size="large" tag="router-link"
-                            to="/обо_мне/контакты/">запись на консультацию</el-button>
+                        <router-link class="!mx-auto ui  yellow inverted basic button !rounded-3xl"
+                            to="/обо_мне/контакты/">запись на консультацию</router-link>
                     </div>
                     <div class="col-span-full lg:col-span-4 flex">
-                        <el-button class="mx-auto" round="" size="large" tag="router-link"
-                            to="/обо_мне/специализация/">моя специализация</el-button>
+                        <router-link class="!mx-auto ui  yellow inverted basic button !rounded-3xl"
+                            to="/обо_мне/специализация/">моя специализация</router-link>
                     </div>
                 </div>
             </div>

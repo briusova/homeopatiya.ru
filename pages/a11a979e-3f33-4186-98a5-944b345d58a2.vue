@@ -196,7 +196,8 @@
 // Импорт необходимых функций
 import "./node_modules/animate.css/animate.min.css";
 import "./node_modules/element-plus/dist/index.css";
-import "./node_modules/fomantic-ui-css/components/container.css";
+import "./node_modules/fomantic-ui-css/components/container.min.css";
+import "./node_modules/fomantic-ui-css/components/button.min.css";
 
 import { computed, inject, ref, useTemplateRef, onMounted } from "vue";
 import { useRoute  } from "vue-router";
