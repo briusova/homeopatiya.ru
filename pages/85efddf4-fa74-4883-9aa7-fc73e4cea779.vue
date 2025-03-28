@@ -7,10 +7,10 @@
                         <h3>+7 (926) 375-05-28</h3>
                     </div>
                     <div class="col-span-4 lg:col-span-6 text-white mt-0 md:mt-8 md:text-right text-center">
-                        <el-button type="danger" circle="" size="large">
+                        <el-button type="danger" circle="" size="large" tag="a" href="mailto:ann@dfgfd.ru">
                             <icon icon="fa:envelope" class="size-3"></icon>
                         </el-button>
-                        <el-button type="danger" circle="" size="large">
+                        <el-button type="danger" circle="" size="large" tag="a" href="https://bryusova.ru/" target="_blank">
                             <icon icon="fa-brands:vk"></icon>
                         </el-button>
                         <el-button type="danger" circle="" size="large">
@@ -33,15 +33,15 @@
                         {{ description }}
                     </h2>
                 </div>
-                <div class="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12 my-12">
+                <div class="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12 my-12 not-prose">
                     <div class="col-span-4 flex ">
-                        <el-button class="mx-auto" round="" size="large" plain="">Действие 1</el-button>
+                        <el-button class="mx-auto" round="" size="large" plain="" tag="router-link" to="/обо_мне/учёба_и_работа/">обо мне</el-button>
                     </div>
                     <div class="col-span-4 flex ">
-                        <el-button class="mx-auto" round="" size="large">Действие 2</el-button>
+                        <el-button class="mx-auto" round="" size="large" tag="router-link" to="/обо_мне/контакты/">запись на консультацию</el-button>
                     </div>
                     <div class="col-span-full lg:col-span-4 flex">
-                        <el-button class="mx-auto" round="" size="large">Действие 3</el-button>
+                        <el-button class="mx-auto" round="" size="large" tag="router-link" to="/обо_мне/случаи/">случаи из практики</el-button>
                     </div>
                 </div>
             </div>
