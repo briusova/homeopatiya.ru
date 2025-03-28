@@ -38,15 +38,15 @@
                 </div>
                 <div class="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12 my-12 not-prose">
                     <div class="col-span-4 flex ">
-                        <el-button class="mx-auto" round="" size="large" type="warning" tag="router-link"
+                        <el-button class="mx-auto" round="" size="large" plain="" tag="router-link"
                             to="/обо_мне/учёба_и_работа/">обо мне</el-button>
                     </div>
                     <div class="col-span-4 flex ">
-                        <el-button class="mx-auto" round="" type="warning" size="large" tag="router-link"
+                        <el-button class="mx-auto" round="" size="large" tag="router-link"
                             to="/обо_мне/контакты/">запись на консультацию</el-button>
                     </div>
                     <div class="col-span-full lg:col-span-4 flex">
-                        <el-button class="mx-auto" round="" size="large" type="warning" tag="router-link"
+                        <el-button class="mx-auto" round="" size="large" tag="router-link"
                             to="/обо_мне/специализация/">моя специализация</el-button>
                     </div>
                 </div>
