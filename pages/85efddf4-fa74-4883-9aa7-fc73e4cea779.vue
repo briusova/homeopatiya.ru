@@ -19,7 +19,7 @@
                             target="_blank">
                             <icon icon="fa-brands:whatsapp"></icon>
                         </el-button>
-                        <el-button type="danger" circle="" size="large" tag="a">
+                        <el-button type="danger" circle="" size="large" tag="a" href="https://t.me/doctor_etarasova" target="_blank">
                             <icon icon="fa-brands:telegram"></icon>
                         </el-button>
 
