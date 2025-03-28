@@ -2,8 +2,8 @@
  <div class="ui container">
 
  <h1 class="mt-12" style="text-align: left;">Джордж Витулкас. Как родить здоровых детей</h1>
- <p style="text-align: justify;">Фрагмент речи, обращённой к врачам-гомеопатам в Национальной академии гомеопатии
- </p>
+ <p style="text-align: justify;"><b>Фрагмент речи, обращённой к врачам-гомеопатам в Национальной академии гомеопатии
+ </b></p>
  <p style="text-align: justify;">Вопрос, который я хочу обсудить сегодня, сформулирован довольно
  расплывчато:&nbsp;</p>
  <p style="text-align: justify;"><b><span style="color: var(--un-prose-body);">Как вырастить здоровых детей в

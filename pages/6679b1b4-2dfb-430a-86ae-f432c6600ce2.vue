@@ -2,8 +2,8 @@
     <div class="ui container">
 
         <h1 class="mt-12" style="text-align: left;">Законы излечения в гомеопатии</h1>
-        <p style="text-align: justify;"><span style="color: var(--un-prose-body);">Отрывок из книги Джоржа Витулкаса
-                "Гомеопатия - медицина нового человека"</span></p>
+        <p style="text-align: justify;"><span style="color: var(--un-prose-body);"><b>Отрывок из книги Джоржа Витулкаса
+                "Гомеопатия - медицина нового человека"</b></span></p>
         <p style="text-align: justify;">Любой врач, не только гомеопат, глубоко изучающий случаи, за которые берется,
             обязательно делает много важных наблюдений. Таким путем гомеопатия открыла и другие законы лечения. Как и
             те, которые мы уже обсуждали, эти законы носят универсальный характер. Они приложимы к любой области -
@@ -21,15 +21,8 @@
         <p style="text-align: justify;">В гомеопатии описано до 22 различных реакций на первый прием лекарства. Детали
             не входят в нашу задачу, достаточно будет сказать, <b>что симптомы должны исчезать после первого приема
                 правильно подобранного лекарства в одном из четырех следующих направлений</b>:</p>
-        <p style="text-align: justify;"><span
-                style="color: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 17.3333px;">–&nbsp;</span>от
-            центра к периферии тела<br><span style="color: var(--un-prose-body);"><span
-                    style="font-size: 13pt; font-family: Arial, sans-serif; color: rgb(51, 51, 51); background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">–</span></span><span
-                style="color: var(--un-prose-body);">&nbsp;сверху вниз<br></span><span
-                style="color: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 17.3333px;">–&nbsp;</span><span
-                style="color: var(--un-prose-body);">от жизненно важных органов к менее важным<br></span><span
-                style="color: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 17.3333px;">–&nbsp;</span><span
-                style="color: var(--un-prose-body);">исчезать в порядке, обратном появлению - появившиеся первыми
+        <p style="text-align: justify;"><span style="color: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 17.3333px;">–&nbsp;</span>от
+            центра к периферии тела<br><span style="color: var(--un-prose-body);"><span style="font-size: 13pt; font-family: Arial, sans-serif; color: rgb(51, 51, 51); background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">–</span></span><span style="color: var(--un-prose-body);">&nbsp;сверху вниз<br></span><span style="color: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 17.3333px;">–&nbsp;</span><span style="color: var(--un-prose-body);">от жизненно важных органов к менее важным<br></span><span style="color: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 17.3333px;">–&nbsp;</span><span style="color: var(--un-prose-body);">исчезать в порядке, обратном появлению - появившиеся первыми
                 исчезают последними.</span></p>
         <p style="text-align: justify;">Говоря о движении симптомов от центра к периферии, мы считаем центром человека
             мозг, обеспечивающий мышление и все высшие функции. За мозгом следует сердце, печень, легкие, почки и так до

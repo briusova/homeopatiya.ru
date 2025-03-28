@@ -2,9 +2,9 @@
     <div class="ui container">
 
         <h1 class="mt-12" style="text-align: left;">«Континуум» единой теории болезней</h1>
-        <p style="text-align: justify;"><span style="color: var(--un-prose-body);">ДЖОРДЖ ВИТУЛКАС, СТЕФАНО
+        <p style="text-align: justify;"><b><span style="color: var(--un-prose-body);">ДЖОРДЖ ВИТУЛКАС, СТЕФАНО
                 КАРЛИНО<br></span><span style="color: var(--un-prose-body);">МЕЖДУНАРОДНАЯ АКАДЕМИЯ КЛАССИЧЕСКОЙ
-                ГОМЕОПАТИИ, АЛОНИССОС, ГРЕЦИЯ</span></p>
+                ГОМЕОПАТИИ, АЛОНИССОС, ГРЕЦИЯ</span></b></p>
 
         <p style="text-align: justify;">Тему настоящей статьи определил простой вопрос, заданный ребенком: "Почему я
             болею?" Этот вопрос очень интересен, но на него нет простого ответа. В данной работе обсуждается несколько
