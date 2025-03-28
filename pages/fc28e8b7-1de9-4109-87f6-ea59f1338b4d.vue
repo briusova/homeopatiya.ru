@@ -1,7 +1,7 @@
 <template>
     <section class="py-14">
         <div class="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
-            <h1>{{ the.header }}</h1>
+            <h2>{{ the.header }}</h2>
 
 
             <p style="text-align: justify;"><b>Представляя случаи из моей практики, хочу вас предостеречь от самолечения
