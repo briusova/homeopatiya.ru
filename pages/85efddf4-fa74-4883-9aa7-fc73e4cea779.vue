@@ -10,16 +10,19 @@
                         <el-button type="danger" circle="" size="large" tag="a" href="mailto:homeopatiya@yandex.ru">
                             <icon icon="fa:envelope" class="size-3"></icon>
                         </el-button>
-                        <el-button type="danger" circle="" size="large" tag="a" href="https://vk.com/doctor_etarasova" target="_blank">
+                        <el-button type="danger" circle="" size="large" tag="a" href="https://vk.com/doctor_etarasova"
+                            target="_blank">
                             <icon icon="fa-brands:vk"></icon>
                         </el-button>
-                        <el-button type="danger" circle="" size="large">
+                        <el-button type="danger" circle="" size="large" tag="a"
+                            href="https://wa.me/79263750528?text=Здравствуйте, хочу записаться на консультацию!"
+                            target="_blank">
                             <icon icon="fa-brands:whatsapp"></icon>
                         </el-button>
-                        <el-button type="danger" circle="" size="large">
+                        <el-button type="danger" circle="" size="large" tag="a">
                             <icon icon="fa-brands:telegram"></icon>
                         </el-button>
-                       
+
                     </div>
                 </div>
                 <div class="flex-auto flex flex-col justify-center">
@@ -35,13 +38,16 @@
                 </div>
                 <div class="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12 my-12 not-prose">
                     <div class="col-span-4 flex ">
-                        <el-button class="mx-auto" round="" size="large" plain="" tag="router-link" to="/обо_мне/учёба_и_работа/">обо мне</el-button>
+                        <el-button class="mx-auto" round="" size="large" type="warning" tag="router-link"
+                            to="/обо_мне/учёба_и_работа/">обо мне</el-button>
                     </div>
                     <div class="col-span-4 flex ">
-                        <el-button class="mx-auto" round="" size="large" tag="router-link" to="/обо_мне/контакты/">запись на консультацию</el-button>
+                        <el-button class="mx-auto" round="" type="warning" size="large" tag="router-link"
+                            to="/обо_мне/контакты/">запись на консультацию</el-button>
                     </div>
                     <div class="col-span-full lg:col-span-4 flex">
-                        <el-button class="mx-auto" round="" size="large" tag="router-link" to="/обо_мне/случаи/">случаи из практики</el-button>
+                        <el-button class="mx-auto" round="" size="large" type="warning" tag="router-link"
+                            to="/обо_мне/специализация/">моя специализация</el-button>
                     </div>
                 </div>
             </div>
