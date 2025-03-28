@@ -19,9 +19,7 @@
                         <el-button type="danger" circle="" size="large">
                             <icon icon="fa-brands:telegram"></icon>
                         </el-button>
-                        <el-button type="danger" circle="" size="large">
-                            <icon icon="fa-brands:skype"></icon>
-                        </el-button>
+                       
                     </div>
                 </div>
                 <div class="flex-auto flex flex-col justify-center">
