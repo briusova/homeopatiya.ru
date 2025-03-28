@@ -4,13 +4,13 @@
             <div class="container mx-auto flex-auto flex flex-col">
                 <div class="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12 my-0 md:my-12">
                     <div class="col-span-4 lg:col-span-6 text-white  text-center md:text-left">
-                        <h3>+7 (926) 375-05-28</h3>
+                        <h3><a href="tel:+79263750528" class="not-prose">+7 (926) 375-05-28</a></h3>
                     </div>
                     <div class="col-span-4 lg:col-span-6 text-white mt-0 md:mt-8 md:text-right text-center">
-                        <el-button type="danger" circle="" size="large" tag="a" href="mailto:ann@dfgfd.ru">
+                        <el-button type="danger" circle="" size="large" tag="a" href="mailto:homeopatiya@yandex.ru">
                             <icon icon="fa:envelope" class="size-3"></icon>
                         </el-button>
-                        <el-button type="danger" circle="" size="large" tag="a" href="https://bryusova.ru/" target="_blank">
+                        <el-button type="danger" circle="" size="large" tag="a" href="https://vk.com/doctor_etarasova" target="_blank">
                             <icon icon="fa-brands:vk"></icon>
                         </el-button>
                         <el-button type="danger" circle="" size="large">
