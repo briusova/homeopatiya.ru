@@ -29,159 +29,39 @@
     <!-- Подвал сайта -->
     <footer class="not-prose text-slate-500 bg-[url(images/note4.jpg)] pt-12 bg-repeat-x mt-28" un-cloak>
         <div class="bg-[url(images/linedpaper.png)]">
-            <div class="pt-16 pb-12 text-sm border-t border-slate-200">
-                <div class="container px-6 mx-auto">
-                    <div class="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12">
-                        <div class="col-span-4 md:col-span-8 lg:col-span-4">
-                            <a class="flex items-center gap-2 mb-6 text-base font-medium leading-6 whitespace-nowrap text-slate-700 focus:outline-none"
-                                href="javascript:void(0)">
-                                <Icon icon="noto:sailboat" class="size-12" />
-                                Brand
-                            </a>
-                            <p>Expertly made, responsive, accessible components in React and HTML ready to be used on
-                                your
-                                website or app. Just copy and paste them on your Tailwind CSS project.</p>
-                        </div>
-                        <nav class="col-span-2 md:col-span-4 lg:col-span-2">
-                            <h3 class="mb-6 text-base font-medium text-slate-700">Product
-                            </h3>
-                            <ul>
-                                <li class="mb-2 leading-6">
-                                    <a href="javascript:void(0)"
-                                        class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
-                                        Features </a>
-                                </li>
-                                <li class="mb-2 leading-6">
-                                    <a href="javascript:void(0)"
-                                        class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
-                                        Customers </a>
-                                </li>
-                                <li class="mb-2 leading-6">
-                                    <a href="javascript:void(0)"
-                                        class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
-                                        Why us? </a>
-                                </li>
-                                <li class="mb-2 leading-6">
-                                    <a href="javascript:void(0)"
-                                        class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
-                                        Pricing </a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <nav class="col-span-2 md:col-span-4 lg:col-span-2">
-                            <h3 class="mb-6 text-base font-medium text-slate-700">Docs & Help
-                            </h3>
-                            <ul>
-                                <li class="mb-2 leading-6">
-                                    <a href="javascript:void(0)"
-                                        class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
-                                        Documentation</a>
-                                </li>
-                                <li class="mb-2 leading-6">
-                                    <a href="javascript:void(0)"
-                                        class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
-                                        Training </a>
-                                </li>
-                                <li class="mb-2 leading-6">
-                                    <a href="javascript:void(0)"
-                                        class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
-                                        System status </a>
-                                </li>
-                                <li class="mb-2 leading-6">
-                                    <a href="javascript:void(0)"
-                                        class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
-                                        FAQ's </a>
-                                </li>
-                                <li class="mb-2 leading-6">
-                                    <a href="javascript:void(0)"
-                                        class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
-                                        Help Center </a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <nav class="col-span-2 md:col-span-4 lg:col-span-2">
-                            <h3 class="mb-6 text-base font-medium text-slate-700">About us</h3>
-                            <ul>
-                                <li class="mb-2 leading-6">
-                                    <a href="javascript:void(0)"
-                                        class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
-                                        About us </a>
-                                </li>
-                                <li class="mb-2 leading-6">
-                                    <a href="javascript:void(0)"
-                                        class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
-                                        Careers </a>
-                                </li>
-                                <li class="mb-2 leading-6">
-                                    <a href="javascript:void(0)"
-                                        class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
-                                        Leadership </a>
-                                </li>
-                                <li class="mb-2 leading-6">
-                                    <a href="javascript:void(0)"
-                                        class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
-                                        Blog</a>
-                                </li>
-                                <li class="mb-2 leading-6">
-                                    <a href="javascript:void(0)"
-                                        class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
-                                        Events </a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <nav class="col-span-2 md:col-span-4 lg:col-span-2">
-                            <h3 class="mb-6 text-base font-medium text-slate-700">Get in
-                                touch</h3>
-                            <ul>
-                                <li class="mb-2 leading-6">
-                                    <a href="javascript:void(0)"
-                                        class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
-                                        Contact </a>
-                                </li>
-                                <li class="mb-2 leading-6">
-                                    <a href="javascript:void(0)"
-                                        class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
-                                        Support </a>
-                                </li>
-                                <li class="mb-2 leading-6">
-                                    <a href="javascript:void(0)"
-                                        class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
-                                        Partners </a>
-                                </li>
-                                <li class="mb-2 leading-6">
-                                    <a href="javascript:void(0)"
-                                        class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
-                                        Join research </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
+            <div class="text-gray-500 px-4 py-5 max-w-screen-xl mx-auto not-prose" un-cloak>
+                <div class="max-w-7xl sm:mx-auto sm:text-center">
+                    <img :src="the.images[0].url" class="w-20 sm:mx-auto" decoding="async" />
+                    <p class="leading-relaxed mt-2 text-[16px]">
+                        Копирование материала возможно только с согласия администрации сайта. Использование любой
+                        медицинской информации
+                        в личных целях требует дополнительной консультации врача. Все данные, опубликованные на сайте
+                        https://homeopatiya.ru,
+                        приведены исключительно для ознакомления, не могут служить поводом для самодиагностики или
+                        самолечения, носят
+                        информационный характер и не являются публичной офертой, определяемой положениями ч. 2 ст. 437
+                        Гражданского
+                        кодекса РФ.
+                    </p>
                 </div>
-            </div>
-            <div class="py-4 text-sm border-t border-slate-200 bg-slate-100">
-                <div class="container px-6 mx-auto">
-                    <div class="grid items-center grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12">
-                        <div class="col-span-2 md:col-span-4 lg:col-span-6">Copyright 2024 Brand</div>
-                        <nav class="col-span-3 md:col-span-4 lg:col-span-6">
-                            <h3 class="sr-only">Get in touch</h3>
-                            <ul class="flex flex-wrap items-center justify-end gap-2 lg:gap-4">
-                                <li class="leading-6">
-                                    <a href="javascript:void(0)"
-                                        class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
-                                        T&C </a>
-                                </li>
-                                <li class="leading-6">
-                                    <a href="javascript:void(0)"
-                                        class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
-                                        Privacy</a>
-                                </li>
-                                <li class="leading-6">
-                                    <a href="javascript:void(0)"
-                                        class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
-                                        Cookies </a>
-                                </li>
-                            </ul>
-                        </nav>
+                <ul class="items-center justify-center mt-8 space-y-5 sm:flex sm:space-x-4 sm:space-y-0">
+                    <li class="hover:text-gray-800" v-for="(item, idx) in docs.$children" :key="idx">
+                        <router-link :to="item.to" v-text="item.name"></router-link>
+                    </li>
+                </ul>
+                <div class="mt-8 items-center justify-between sm:flex">
+                    <div class="mt-4 sm:mt-0">
+                        &copy; 2025 {{ the.title }}, ИНН: 773365048748
+                    </div>
+                    <div class="mt-6 sm:mt-0">
+                        <ul class="flex items-center space-x-4">
+                            <li class="w-10 h-10 border rounded-full flex items-center justify-center"
+                                v-for="(item, idx) in contactMethods" :key="idx">
+                                <a :href="item.href" target="_blank" rel="noopener noreferrer">
+                                    <icon :icon="item.icon" class="size-6"></icon>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -200,7 +80,7 @@ import "./node_modules/fomantic-ui-css/components/container.min.css";
 import "./node_modules/fomantic-ui-css/components/button.min.css";
 
 import { computed, inject, ref, useTemplateRef, onMounted } from "vue";
-import { useRoute  } from "vue-router";
+import { useRoute } from "vue-router";
 import ElementPlus from "element-plus";
 import { Icon } from '@iconify/vue';
 import { get, set } from "@vueuse/core";
@@ -212,13 +92,13 @@ window.app.use(ElementPlus);
 
 // Вычисление объектов текущих страниц
 
-//const { id } = defineProps(["id"]);
+const { id } = defineProps(["id"]);
 const pages = inject("pages");
-//const the = pages[id];
+const the = pages[id];
 //const views = computed(() => the.$children.filter(({ $children }) => $children.length));
 const route = useRoute();
 const current = computed(() => pages[route.name]);
-
+const docs = computed(() => the.children.find(({ name }) => name === "документы"));
 // Анимация заголовка сайта при прокрутки страницы
 
 const ready = ref(true);
@@ -238,5 +118,27 @@ onMounted(() => {
 
 // Флаг открытия меню сайта
 const drawer = ref(false);
+const contactMethods = [
+  {
+    icon: "mdi:phone-outline",
+    href: "tel:+79263750528",
+  },
+  {
+    icon: "fa-brands:vk",
+    href: "https://vk.com/doctor_etarasova",
+  },
+  {
+    icon: "mdi:envelope-outline",
+    href: "mailto:homeopatiya@yandex.ru",
+  },
+  {
+    icon: "mdi:telegram",
+    href: "https://t.me/doctor_etarasova",
+  },
+  {
+    icon: "fa-brands:whatsapp",
+    href: "https://wa.me/79263750528?text=Здравствуйте, хочу записаться на консультацию!",
+  },
 
+];
 </script>

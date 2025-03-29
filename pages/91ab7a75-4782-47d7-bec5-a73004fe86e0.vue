@@ -6,7 +6,7 @@
     </div>
     <div class="my-4 flex flex-col items-start gap-4 sm:flex-row animate__animated animate__faster"
         v-for="({ images, to, title, description, icon }, i) in $children"
-        :class="{ animate__fadeInRight: fade[i], animate__fadeOutRight: !fade[i], }"
+        :class="{ animate__fadeInRight: fade[i], invisible: !fade[i] }"
         v-intersection-observer="([{ isIntersecting }]) => { fade[i] = isIntersecting }">
         <div @mouseover="slide[i] = true" @mouseleave="slide[i] = false" :class="`bg-[url(${images[0].url})]`"
             class="flex flex-auto w-full h-48 sm:w-48 sm:h-24 bg-center bg-cover overflow-hidden rounded">
@@ -38,9 +38,6 @@
     <el-button class="not-prose" tag="router-link" :to="parent.to" :icon="Back" type="success">на
         главную</el-button>
 </template>
-
-
-
 <script setup>
 import { inject, ref, watch } from "vue";
 import { Back } from '@element-plus/icons-vue';
@@ -49,7 +46,7 @@ import { vIntersectionObserver } from "@vueuse/components";
 
 const { id } = defineProps(["id"]),
     { $children, parent } = inject("pages")[id],
-    fade = ref([]),
+    fade = ref(Array($children.length).fill(true)),
     slide = ref([]),
     mouseenter = ref([]),
     once = true,

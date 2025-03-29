@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col items-start gap-4 lg:flex-row">
+    <div class="flex flex-col items-start gap-4 lg:flex-row" un-cloak>
         <div class="flex items-center mb-6">
             <img class="w-36 mr-6" src="images/22f8abe3-91e3-4edd-b23a-e0da4aaf38bc.png" :alt="title">
         </div>
@@ -14,7 +14,7 @@
             </h3>
         </div>
     </div>
-    <div class="prose max-w-none text-slate-500">
+    <div class="prose max-w-none text-slate-500" un-cloak>
         <p style="text-align: justify;">Вы зашли на сайт врача-гомеопата Тарасовой Елены Александровны. Я рада встрече с Вами!</p>
         <p style="text-align: justify;">Уже более 30 лет я работаю в области гомеопатии и не перестаю восхищаться результатом действия этих
             маленьких крупинок. Удивительно, какой огромный потенциал скрыт в каждом человеке! Ведь гомеопатия не только
@@ -30,7 +30,7 @@
             борьбу с болезнью. Моя цель — достичь гармонии человека с самим собой и окружающим миром. Я работаю, чтобы в
             мире стало больше красивых, здоровых и счастливых людей!</p>
     </div>
-    <div class="grid grid-cols-4 gap-12 mt-24 md:grid-cols-8 lg:grid-cols-12">
+    <div class="grid grid-cols-4 gap-12 mt-24 md:grid-cols-8 lg:grid-cols-12" un-cloak>
         <el-card class="not-prose col-span-4 animate__animated animate__faster" :class="{ animate___flipInY: flip[i], animate___flipOutY: !flip[i], }" body-class="!pa-0 flex" shadow="hover" v-for="(child, i) in $children" v-intersection-observer="[([{ isIntersecting }]) => { flip[i] = isIntersecting }, { threshold: 0.3 }]">
             <div @mouseover="slide[i] = true" @mouseleave="slide[i] = false" :class="`bg-[url(${child.images[0].url})]`" class="flex flex-auto h-64 bg-center bg-cover overflow-hidden">
                 <transition enter-active-class="animate__animated animate__slideInUp animate__faster" leave-active-class="animate__animated animate__slideOutUp  animate__faster">
