@@ -3,7 +3,7 @@
 
         <h1 class="mt-12" style="text-align: left;">Кожные болезни с точки зрения гомеопата</h1>
         <p style="text-align: justify;"><b><i>Статья была опубликована в журнале "Les nouvelles esthetiques". Рубрика:
-                    Наука и красота</i></b>.</p>
+                    Наука и красота</i></b>.</p><img src="images/ec7ce42b-3cf1-4e2b-8445-9343cf6b44e1.jpeg" alt="" decoding="async" loading="lazy" class="rounded-3xl w-60"><p style="text-align: justify;"><br></p>
 
         <p style="text-align: justify;"><i>Годы обучения в ординатуре всегда запоминаются надолго. Наблюдая за моими
                 учителями - профессорами, доцентами, просто талантливыми врачами кожно-венерологической больницы им.
