@@ -24,7 +24,49 @@
         <p>Запись
             на консультацию веду я сама.</p>
         <p><b>Записаться на консультацию</b> Вы можете по телефону, WhatsApp, Телеграмм или заполните форму</p>
- <p>ФОРМА</p>
+
+
+    <el-form :model="form" label-width="auto" ref="formRef" class="max-w-96 my-12" label-position="top">
+      <el-form-item label="Ваше имя" prop="name" :rules="[
+        {
+          required: true,
+          message: 'Пожалуйста, введите своё имя',
+          trigger: 'blur',
+        },
+      ]">
+        <el-input v-model="form.name" />
+      </el-form-item>
+      <el-form-item label="Ваш телефон" prop="phone">
+        <el-input v-model="form.phone" />
+      </el-form-item>
+      <el-form-item label="Ваш емейл" prop="email" :rules="[
+        {
+          required: true,
+          message: 'Пожалуйста, введите адрес электронной почты',
+          trigger: 'blur',
+        },
+        {
+          type: 'email',
+          message: 'Пожалуйста, введите корректный адрес электронной почты',
+          trigger: ['blur', 'change'],
+        },
+      ]">
+        <el-input v-model="form.email" />
+      </el-form-item>
+      <el-form-item label="Сообщение" prop="desc" :rules="[
+        {
+          required: true,
+          message: 'Пожалуйста, введите своё сообщение',
+          trigger: 'blur',
+        },
+      ]">
+        <el-input v-model="form.desc" type="textarea" />
+      </el-form-item>
+      <el-form-item>
+        <el-button type="primary" @click="throttledFn">Отправить заявку</el-button>
+        <el-button @click="resetForm(formRef)">Очистить форму</el-button>
+      </el-form-item>
+    </el-form>
 
         <el-button class="not-prose" tag="router-link" :to="the.parent.to" :icon="Back" type="success">на
             главную</el-button>
@@ -36,9 +78,54 @@
 
 
 <script setup>
-import { inject } from "vue";
+
 import { Back } from '@element-plus/icons-vue';
-const { id } = defineProps(["id"]);
-const pages = inject("pages");
-const the = pages[id];
+import { useThrottleFn } from "@vueuse/core";
+import { reactive, ref, inject } from "vue";
+import { ElMessage } from "element-plus";
+
+const { id } = defineProps(["id"]),
+  the = inject("pages")[id],
+  formRef = ref(),
+  method = "POST",
+  headers = {
+    "Content-Type": "application/json",
+  },
+  form = reactive({
+    name: "",
+    phone: "",
+    email: "",
+    desc: "",
+  }),
+
+  throttledFn = useThrottleFn(sendForm, 6000);
+
+function resetForm(formEl) {
+  formEl?.resetFields();
+}
+
+function sendForm() {
+  formRef.value?.validate(async (valid) => {
+    if (valid) {
+      const body = JSON.stringify(form);
+      try {
+        ElMessage("Отправка запроса...");
+        const response = await fetch("https://form.homeopatiya.ru", {
+          method,
+          headers,
+          body,
+        });
+        ElMessage.closeAll();
+        if (response.ok) {
+          ElMessage.success(await response.text());
+          formRef.value?.resetFields();
+        } else ElMessage.error(`Ошибка: ${await response.text()}`);
+      } catch ({ message }) {
+        ElMessage.closeAll();
+        ElMessage.error(`Ошибка: ${message}`);
+      }
+    } else ElMessage.error("Пожалуйста, заполните форму");
+  });
+}
+
 </script>
