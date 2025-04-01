@@ -36,21 +36,16 @@
       ]">
         <el-input v-model="form.name" />
       </el-form-item>
-      <el-form-item label="Ваш телефон" prop="phone">
-        <el-input v-model="form.phone" />
-      </el-form-item>
-      <el-form-item label="Ваш емейл" prop="email" :rules="[
+      <el-form-item label="Ваш телефон" prop="phone" :rules="[
         {
           required: true,
-          message: 'Пожалуйста, введите адрес электронной почты',
+          message: 'Пожалуйста, введите номер телефона',
           trigger: 'blur',
         },
-        {
-          type: 'email',
-          message: 'Пожалуйста, введите корректный адрес электронной почты',
-          trigger: ['blur', 'change'],
-        },
       ]">
+        <el-input v-model="form.phone" />
+      </el-form-item>
+      <el-form-item label="Ваш емейл" prop="email">
         <el-input v-model="form.email" />
       </el-form-item>
       <el-form-item label="Сообщение" prop="desc" :rules="[
