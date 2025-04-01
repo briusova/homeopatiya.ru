@@ -16,11 +16,6 @@
                         homeopatiya.ru
                     </router-link>
                 </template>
-                <template #extra>
-                    <el-button circle @click="drawer = true">
-                        <icon icon="mdi:menu" class="size-5"></icon>
-                    </el-button>
-                </template>
             </el-page-header>
         </div>
         <!-- Основная часть сайта -->
@@ -116,8 +111,7 @@ onMounted(() => {
     scroll();
 });
 
-// Флаг открытия меню сайта
-const drawer = ref(false);
+
 const contactMethods = [
   {
     icon: "mdi:phone-outline",
