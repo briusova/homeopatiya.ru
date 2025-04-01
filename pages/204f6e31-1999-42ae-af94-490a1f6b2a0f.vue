@@ -48,6 +48,14 @@
       <el-form-item label="Ваш емейл" prop="email">
         <el-input v-model="form.email" />
       </el-form-item>
+<el-form-item label="Предпочтительный способ связи" prop="type">
+  <el-radio-group v-model="form.type">
+    <el-radio value="WhatsApp">WhatsApp</el-radio>
+    <el-radio value="Telegram">Telegram</el-radio>
+    <el-radio value="E-mail">E-mail</el-radio>
+    <el-radio value="Телефон">Телефон</el-radio>
+  </el-radio-group>
+</el-form-item>
       <el-form-item label="Сообщение" prop="desc" :rules="[
         {
           required: true,
@@ -90,6 +98,7 @@ const { id } = defineProps(["id"]),
     name: "",
     phone: "",
     email: "",
+    type: "WhatsApp",
     desc: "",
   }),
 
