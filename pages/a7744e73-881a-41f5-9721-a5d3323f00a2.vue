@@ -24,5 +24,5 @@ const pages = inject("pages");
 const the = pages[id];
 
 
-const srcList = [...Array(63).keys()].map((i) => `images/diplomas/${i + 1}.jpg`);
+const srcList = [...Array(65).keys()].map((i) => `images/diplomas/${i + 1}.jpg`);
 </script>
