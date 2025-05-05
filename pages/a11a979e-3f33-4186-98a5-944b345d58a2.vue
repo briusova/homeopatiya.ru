@@ -1,7 +1,7 @@
 <template>
     <div class="min-h-dvh" un-cloak>
         <!-- Заголовок сайта -->
-        <div class="sticky not-prose top-0 z-50 pa-4 border-b bg-neutral-50 opacity-0 hover:opacity-100 transition-opacity duration-1000"
+        <div class="sticky not-prose top-0 z-50 pa-4 border-slate-200 border-b bg-neutral-50 opacity-0 hover:opacity-100 transition-opacity duration-1000"
             :class="{ 'opacity-100': !ready }" ref="pageHeader">
             <el-page-header icon="" :content="current.title">
                 <template #breadcrumb>
@@ -109,26 +109,26 @@ onMounted(() => {
 
 
 const contactMethods = [
-  {
-    icon: "mdi:phone-outline",
-    href: "tel:+79263750528",
-  },
-  {
-    icon: "fa-brands:vk",
-    href: "https://vk.com/doctor_etarasova",
-  },
-  {
-    icon: "mdi:envelope-outline",
-    href: "mailto:homeopatiya@yandex.ru",
-  },
-  {
-    icon: "mdi:telegram",
-    href: "https://t.me/doctor_etarasova",
-  },
-  {
-    icon: "fa-brands:whatsapp",
-    href: "https://wa.me/79263750528?text=Здравствуйте, хочу записаться на консультацию!",
-  },
+    {
+        icon: "mdi:phone-outline",
+        href: "tel:+79263750528",
+    },
+    {
+        icon: "fa-brands:vk",
+        href: "https://vk.com/doctor_etarasova",
+    },
+    {
+        icon: "mdi:envelope-outline",
+        href: "mailto:homeopatiya@yandex.ru",
+    },
+    {
+        icon: "mdi:telegram",
+        href: "https://t.me/doctor_etarasova",
+    },
+    {
+        icon: "fa-brands:whatsapp",
+        href: "https://wa.me/79263750528?text=Здравствуйте, хочу записаться на консультацию!",
+    },
 
 ];
 </script>
