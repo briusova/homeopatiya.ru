@@ -69,21 +69,17 @@
 <script setup>
 
 // Импорт необходимых функций
-import "./node_modules/animate.css/animate.min.css";
-import "./node_modules/element-plus/dist/index.css";
-import "./node_modules/fomantic-ui-css/components/container.min.css";
-import "./node_modules/fomantic-ui-css/components/button.min.css";
-
-import { computed, inject, ref, useTemplateRef, onMounted } from "vue";
+import { computed, inject, ref, useTemplateRef, onMounted, getCurrentInstance } from "vue";
 import { useRoute } from "vue-router";
 import ElementPlus from "element-plus";
 import { Icon } from '@iconify/vue';
 import { get, set } from "@vueuse/core";
 
+const { appContext: { app } } = getCurrentInstance();
 // Инициализация компонента icon
-window.app.component("Icon", Icon);
+app.component("Icon", Icon);
 // Инициализация фреймворка Element Plus
-window.app.use(ElementPlus);
+app.use(ElementPlus);
 
 // Вычисление объектов текущих страниц
 
@@ -136,3 +132,10 @@ const contactMethods = [
 
 ];
 </script>
+
+<style>
+@import "./node_modules/animate.css/animate.min.css";
+@import "./node_modules/element-plus/dist/index.css";
+@import "./node_modules/fomantic-ui-css/components/container.min.css";
+@import "./node_modules/fomantic-ui-css/components/button.min.css";
+</style>

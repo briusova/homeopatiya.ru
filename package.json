@@ -2,11 +2,11 @@
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
     "@iconify/vue": "^4.3.0",
-    "@vueuse/components": "^12.7.0",
-    "@vueuse/core": "^12.7.0",
-    "@vueuse/shared": "^12.7.0",
+    "@vueuse/components": "^12.8.2",
+    "@vueuse/core": "^12.8.2",
+    "@vueuse/shared": "^12.8.2",
     "animate.css": "^4.1.1",
-    "element-plus": "^2.9.4",
-    "fomantic-ui-css": "^2.9.3"
+    "element-plus": "^2.9.9",
+    "fomantic-ui-css": "^2.9.4"
   }
 }
